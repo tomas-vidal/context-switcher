@@ -1,0 +1,14 @@
+{
+  "name": "Context Switcher",
+  "version": "1.0.0",
+  "description": "Testing",
+  "manifest_version": 3,
+  "author": "Tomás Vidal",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Test chrome extension"
+  },
+  "permissions": ["scripting", "tabs"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "icons": {}
+}
