@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         "dark-gray": "#1F1F1F",
+        "darker-gray": "#131313",
         "red-danger": "#F03737",
       },
     },
