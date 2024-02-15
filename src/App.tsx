@@ -1,5 +1,4 @@
-import { FormEvent, useState } from "react";
-import { useChromeStorageLocal } from "use-chrome-storage";
+import { FormEvent, useState, useEffect } from "react";
 import "./index.css";
 
 export type Tab = {
@@ -11,7 +10,7 @@ type Id = `${string}-${string}-${string}-${string}-${string}`;
 
 function App() {
   const [input, setInput] = useState<string>("");
-  const [tabs, setTabs] = useChromeStorageLocal<Tab[]>("tabs", []);
+  const [tabs, setTabs] = useState<Tab[]>([]);
 
   function openTabs(): void {
     tabs.forEach(async (tab: Tab) => {
@@ -20,6 +19,19 @@ function App() {
       });
     });
   }
+
+  useEffect(() => {
+    const fetchData = () => {
+      chrome.storage.local.get("tabs", (result) => {
+        setTabs(result.tabs);
+      });
+    };
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    chrome.storage.local.set({ tabs: tabs });
+  }, [tabs]);
 
   async function addTab(e: FormEvent) {
     e.preventDefault();
