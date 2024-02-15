@@ -10,9 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@types/uuid": "^9.0.8",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "use-chrome-storage": "^1.2.2"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.260",
