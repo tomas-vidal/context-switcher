@@ -1,30 +1,7 @@
-# React + TypeScript + Vite
+# Context Switcher - Chrome extension
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Context Switcher is a simple and efficient Chrome extension built with React, TypeScript, and Vite, designed to streamline the process of managing multiple webpages for specific tasks. With this extension, users can create a custom collection of URLs related to a particular context—whether it's for gaming, work, research, or any other use case.
 
-Currently, two official plugins are available:
+By clicking a single button, Context Switcher opens all the designated pages in separate tabs, saving time and eliminating the need to manually navigate to each URL. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+This lightweight, user-friendly extension is ideal for those who regularly work with multiple sites and want to optimize their workflow with a one-click solution for managing and switching between various web contexts.
